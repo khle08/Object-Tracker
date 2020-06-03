@@ -13,6 +13,12 @@ frames the neighbouring pixels will grab its pixel intensity from a particular p
 
 More information on optical flow can be obtained from [here](https://en.wikipedia.org/wiki/Optical_flow#:~:text=Optical%20flow%20or%20optic%20flow,brightness%20pattern%20in%20an%20image.)
 
+
+Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)
+
+<img src="./OPT_FLOW.mp4 style="width:500px;height:300px;">
+
+
 ## Object Tracking Algorithms :
       
 
