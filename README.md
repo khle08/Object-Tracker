@@ -1,5 +1,5 @@
 # Object-Tracker
-Real time Object-Tracking system
+## It is an Open Source Object-Tracking system that can be used to track objects in videos . With some modifications it can also be applied to make a real time system 
 
 ## Optical Flow
 According to Wikipedia: 
