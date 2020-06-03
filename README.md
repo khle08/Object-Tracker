@@ -49,7 +49,7 @@ This project implements all of the tracking algorithms using [OpenCV Tracking AP
 <video width="620" height="440" src="SINGLE_Tracker.mp4" type="video/mp4" controls>
 
 
-2) 1) <B><I>Multiple Object Tracker</I></B>
+2) <B><I>Multiple Object Tracker</I></B>
     $ python 06_Multi_Tracking.py
     
     This file has some bugs ! Will be updated after fixing them
