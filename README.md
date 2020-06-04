@@ -1,3 +1,115 @@
+<style>
+# Object-Tracker {color: red}	
+*{
+	margin :0;
+	padding:0;
+}
+
+.body {
+	margin-top:8%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-color: #333;
+  	font-weight: bold;
+  	height: 400px;
+}
+
+.load-head{
+	color : #f1f1f1;
+	font-family: sans-serif;
+	font-size: 30px;
+	margin-bottom: 1%;  
+}
+
+.loader{
+	height: 30px;
+	width: 300px;
+	display: flex;
+}
+
+.loader span{
+	width: 30px;
+	height: 30px;
+	background: white;
+	margin: 1px; 
+}
+
+.L1{
+	content: '1';
+	animation: L1 1s 1;
+}
+
+.L2{
+	animation: L1 1s 1;
+	animation-delay: 0.2s;
+}
+
+.L3{
+	animation: L1 1s 1;
+	animation-delay: 0.6s;
+}
+
+.L4{
+	animation: L1 1s 1;
+	animation-delay: 0.9s;
+}
+
+.L5{
+	animation: L1 1s 1;
+	animation-delay: 1.2s;
+}
+
+.L6{
+	animation: L1 1s 1;
+	animation-delay: 1.5s;
+}
+
+.L7{
+	animation: L1 1s 1;
+	animation-delay: 1.8s;
+}
+
+.L8{
+	animation: L1 1s 1;
+	animation-delay: 2.1s;
+}
+
+.L9{
+	animation: L1 1s 1;
+	animation-delay: 2.4s;
+}
+
+@keyframes L1{
+	50%{
+		background-color: #dc3545;
+	}
+	
+	100%{
+		transform: rotateZ(180deg);
+	}
+}
+</style>
+<div class="body">
+	<div>
+		<div class="load-head">
+			Loading... 
+		</div>
+		<div class="loader">
+			<span class="L1"></span>
+			<span class="L2"></span>
+			<span class="L3"></span>
+			<span class="L4"></span>
+			<span class="L5"></span>
+			<span class="L6"></span>
+			<span class="L7"></span>
+			<span class="L8"></span>
+			<span class="L9"></span>
+		</div>
+	</div>
+</div>
+				
+
 ## It is an Open Source Object-Tracking system that can be used to track objects in videos . With some modifications it can also be applied to make a real time system 
 
 _Object tracking is one of the trendy and under investigation topic of Computer Vision that
