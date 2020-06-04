@@ -91,6 +91,7 @@ div[class*=box] {
 </div>
 </div>
 																
+<p>
 <B><I>
 Object tracking is one of the trendy and under investigation topic of Computer Vision that
 challenges with several issues that should be considered while creating tracking systems, such as, visual
@@ -98,7 +99,7 @@ appearance, occlusions, camera motion, and so on. In several tracking algorithms
 Network (CNN) has been applied to take advantage of its powerfulness in feature extraction that convolutional
 layers can characterize the object from different perspectives and treat tracking process from misclassification.
 	</I></B>
-
+</p>
 				
 <style>
 *{
@@ -231,15 +232,32 @@ To obtain the optical flow in a video file :
 ## Object Tracking Algorithms :
 
 ### Channel and Spatial Relatibility Tracking [CSRT](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjes5vxnebpAhU1zTgGHTH2D3sQFjABegQIBBAB&url=https%3A%2F%2Farxiv.org%2Fpdf%2F1611.08461&usg=AOvVaw1fGNV1xM1TWV7lVL0OM9Ee) 
-CSRT tracker is C++ implementation of the CSR-DCF (Channel and Spatial Reliability of Discriminative Correlation Filter)
+
+_CSRT tracker is C++ implementation of the CSR-DCF (Channel and Spatial Reliability of Discriminative Correlation Filter)
 tracking algorithm in OpenCV library. Experimental results demonstrated that CSRT tracker presents better
-tracking outcomes with integration of object detection model, rather than using tracking algorithm or filter 
+tracking outcomes with integration of object detection model, rather than using tracking algorithm or filter .It is integration of 
+the Region based CNN (Faster RCNN) pre-trained object detection model that the OpenCV based CSRT (Channel and Spatial Reliability Tracking) tracker has a high
+chance to identifying objects features, classes and locations as well_
 
-- Multiple Instance Learning [MIL](https://faculty.ucmerced.edu/mhyang/papers/cvpr09a.pdf)
+### Multiple Instance Learning [MIL](https://faculty.ucmerced.edu/mhyang/papers/cvpr09a.pdf)
+It address the problem of learning an adaptive appearance model for object tracking. In particular, a class of tracking techniques 
+called “tracking by detection” give promising results at realtime speeds. These methods train a discriminative classifier in an online 
+manner to separate the object from the background. This classifier bootstraps itself by using the current tracker state 
+to extract positive and negative examples from the current frame. Slight inaccuracies in the tracker can therefore lead to incorrectly 
+labeled training examples, which degrades the classifier and can cause further drift.
+Using Multiple Instance Learning (MIL) instead of traditional supervised learning avoids these problems, and can therefore lead to a 
+more robust tracker with fewer parameter tweaks.
 
-- Kernalized Correlation Filter [KCF](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjr_eCDn-bpAhVh6nMBHctkCOYQFjACegQIAxAB&url=https%3A%2F%2Fwww.mdpi.com%2F2076-3417%2F10%2F2%2F713%2Fpdf&usg=AOvVaw05SOT9pM4fR68LFLr6-Cq7)
-      
-- Tracker Learning Detection [TLD](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiUz6WyoObpAhUD63MBHU4_C5QQFjABegQIBRAB&url=http%3A%2F%2Fvision.stanford.edu%2Fteaching%2Fcs231b_spring1415%2Fpapers%2FKalal-PAMI.pdf&usg=AOvVaw1MM92z9XpbLgUBLwy2PFjw)
+### Kernalized Correlation Filter [KCF](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjr_eCDn-bpAhVh6nMBHctkCOYQFjACegQIAxAB&url=https%3A%2F%2Fwww.mdpi.com%2F2076-3417%2F10%2F2%2F713%2Fpdf&usg=AOvVaw05SOT9pM4fR68LFLr6-Cq7)
+_Deep feature-based trackers that have been proposed to achieve a higher accuracy are not suitable for real-time tracking because
+of an extremely slow processing speed. The slow speed is a major factor to degrade tracking accuracy under a real-time streaming 
+condition since the processing delay forces skipping frames. To increase the tracking accuracy with preserving the processing speed, 
+an improved kernelized correlation filter (KCF)-based tracking method that integrates three functional modules:_
+- tracking failure detection 
+- re-tracking using multiple search windows 
+- motion vector analysis to decide a preferred search window.
+
+### Tracker Learning Detection [TLD](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiUz6WyoObpAhUD63MBHU4_C5QQFjABegQIBRAB&url=http%3A%2F%2Fvision.stanford.edu%2Fteaching%2Fcs231b_spring1415%2Fpapers%2FKalal-PAMI.pdf&usg=AOvVaw1MM92z9XpbLgUBLwy2PFjw)
 
 - Generic Object Tracking Using Regression Networks [GOTURN](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiivYrPoebpAhWTyjgGHbvHDUwQFjABegQIAhAB&url=https%3A%2F%2Farxiv.org%2Fpdf%2F1604.01802&usg=AOvVaw0BQRhbH7dA0L_H4SqyY0Ho)
 
