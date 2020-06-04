@@ -86,7 +86,7 @@ div[class*=box] {
 <div class="body">
 	<div class="box">
   <div class="butn butn-hov">
-    <span>HOVER ME</span>
+    <span>Object Tracker</span>
   </div>
 </div>
 </div>
@@ -113,7 +113,7 @@ layers can characterize the object from different perspectives and treat trackin
   	align-items: center;
   	background-color: #333;
   	font-weight: bold;
-  	height: 200px;
+  	height: 100px;
 }
 
 .load-head{
@@ -260,7 +260,7 @@ This project implements all of the tracking algorithms using [OpenCV Tracking AP
   	align-items: center;
   	background-color: #333;
   	font-weight: bold;
-  	height: 200px;
+  	height: 100px;
 }
 
 .load-head{
