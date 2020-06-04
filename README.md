@@ -38,7 +38,7 @@
 }
 </style>
 <div class="load-body">
-	<h1 class="head">Anshuman Mishra</h1><br>
+	<h1 class="head">Object Tracking...</h1><br>
     <div class="loader">
         <div class="loader">
             <div class="loader">
