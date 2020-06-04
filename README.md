@@ -68,7 +68,7 @@ This file has some bugs ! Will be updated after fixing them
 ##### _Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)_
 Optical Flow:
 
-<video width="500" height="400" src="./OPT_FLOW.mp4" type="video/mp4" controls>
+<video width="620" height="440" src="./OPT_FLOW.mp4" type="video/mp4" controls>
 
 
 
