@@ -5,8 +5,8 @@
 }	
 .load-body
 {
-    height:100px;
-    width:100px;
+    height:25px;
+    width:25px;
     position:absolute;
     left:50%;
     top:35%;
@@ -38,7 +38,7 @@
 }
 </style>
 <div class="load-body">
-	<h1 class="head">Object Tracking...</h1><br>
+	<h1 class="head">Object Tracking ...</h1><br>
     <div class="loader">
         <div class="loader">
             <div class="loader">
@@ -46,8 +46,14 @@
                     <div class="loader">  
 	               		<div class="loader">
                                			
- </div></div></div></div></div></div></div>
-								
+                   		</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+												
 <B><I>
 Object tracking is one of the trendy and under investigation topic of Computer Vision that
 challenges with several issues that should be considered while creating tracking systems, such as, visual
