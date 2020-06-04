@@ -398,7 +398,116 @@ _Download the video demonstration for a single object tracker [here](https://git
 - [OpenCV contrib modules](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjIhcL0pebpAhUexjgGHQ7wAuUQFjAAegQIARAB&url=https%3A%2F%2Fpypi.org%2Fproject%2Fopencv-contrib-python%2F&usg=AOvVaw2CmQK0gZWG751zsw_Nm6X7)
       
 
-### Multiple Object Tracker
+<style>
+*{
+	margin :0;
+	padding:0;
+}
+
+.body {
+	margin-top:8%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-color: #333;
+  	font-weight: bold;
+  	height: 100px;
+}
+
+.load-head{
+	color : #f1f1f1;
+	font-family: sans-serif;
+	font-size: 30px;
+	margin-bottom: 1%;  
+}
+
+.loader{
+	height: 30px;
+	width: 300px;
+	display: flex;
+}
+
+.loader span{
+	width: 30px;
+	height: 30px;
+	background: white;
+	margin: 1px; 
+}
+
+.L1{
+	content: '1';
+	animation: L1 1s 1;
+}
+
+.L2{
+	animation: L1 1s 1;
+	animation-delay: 0.2s;
+}
+
+.L3{
+	animation: L1 1s 1;
+	animation-delay: 0.6s;
+}
+
+.L4{
+	animation: L1 1s 1;
+	animation-delay: 0.9s;
+}
+
+.L5{
+	animation: L1 1s 1;
+	animation-delay: 1.2s;
+}
+
+.L6{
+	animation: L1 1s 1;
+	animation-delay: 1.5s;
+}
+
+.L7{
+	animation: L1 1s 1;
+	animation-delay: 1.8s;
+}
+
+.L8{
+	animation: L1 1s 1;
+	animation-delay: 2.1s;
+}
+
+.L9{
+	animation: L1 1s 1;
+	animation-delay: 2.4s;
+}
+
+@keyframes L1{
+	50%{
+		background-color: #dc3545;
+	}
+	
+	100%{
+		transform: rotateZ(180deg);
+	}
+}
+</style>
+<div class="body">
+	<div>
+		<div class="load-head">
+			Multiple Object Tracker
+		</div>
+		<div class="loader">
+			<span class="L1"></span>
+			<span class="L2"></span>
+			<span class="L3"></span>
+			<span class="L4"></span>
+			<span class="L5"></span>
+			<span class="L6"></span>
+			<span class="L7"></span>
+			<span class="L8"></span>
+			<span class="L9"></span>
+		</div>
+	</div>
+</div>
+
 Download [06_Multi_Tracking.py](https://github.com/shivanshuman021/Object-Tracker/blob/master/06_Multi_Tracking.py)	
 
     $ python 06_Multi_Tracking.py
