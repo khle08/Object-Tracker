@@ -21,14 +21,15 @@ frames the neighbouring pixels will grab its pixel intensity from a particular p
 
 Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)
 <center>
-<video width="620" height="440" src="OPT_FLOW.mp4" type="video/mp4" controls>
+<video width="500" height="400" src="OPT_FLOW.mp4" type="video/mp4" controls>
   </center>
   
 To obtain the optical flow:
   
     $ python 01_Optical_Flow.py
   
-
+<video width="500" height="400" src="SINGLE_Tracker.mp4" type="video/mp4" controls>
+    
 ## Object Tracking Algorithms :
 
 - Channel and Spatial Relatibility Tracking [CSRT](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjes5vxnebpAhU1zTgGHTH2D3sQFjABegQIBBAB&url=https%3A%2F%2Farxiv.org%2Fpdf%2F1611.08461&usg=AOvVaw1fGNV1xM1TWV7lVL0OM9Ee)
@@ -54,7 +55,7 @@ This project implements all of the tracking algorithms using [OpenCV Tracking AP
 - [OpenCV](https://opencv.org)
 - [OpenCV contrib modules](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjIhcL0pebpAhUexjgGHQ7wAuUQFjAAegQIARAB&url=https%3A%2F%2Fpypi.org%2Fproject%2Fopencv-contrib-python%2F&usg=AOvVaw2CmQK0gZWG751zsw_Nm6X7)
       
-<video width="620" height="440" src="SINGLE_Tracker.mp4" type="video/mp4" controls>
+
 
 
 #### Multiple Object Tracker
