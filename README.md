@@ -1,75 +1,59 @@
 <style>
-.load-body{
-	margin : 0;
-	padding: 0;
-	background: #34495E;
-	height: 350px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: "montserrat", sans-serif;
+
+.bg{
+	background: #32CD32; 
+}	
+.load-body
+{
+    height:50px;
+    width:50px;
+    position:absolute;
+    left:50%;
+    top:35%;
+    transform:translate(-50%,-50%);
 }
 
-.loading{
-	width:120px;
-	height: 120px;
-	box-sizing: border-box;
-	border-radius: 50%; 
-	border-top : 10px solid #e74c3c;
-	position: relative;
-	animation: load 2s linear infinite;
+.loader
+{
+    height:calc(100% - 8px);
+    width:calc(100% - 8px);
+    border-top:8px solid red;
+    border-radius:50%;
+    animation:animate 2s linear infinite;
 }
 
-.loading::before,.loading::after{
-content : '';
-width: 120px;
-height: 120px;
-position: absolute;
-left: 0;
-top: -10px;
-box-sizing : border-box;
-border-radius: 50%;
+@keyframes animate
+{
+    100%{transform:rotate(360deg);}
 }
 
-.loading::before{
-	border-top:10px solid #e67e22;
-	transform: rotate(120deg);
-}
+.head
+{
+    position:relative;
+    top:30px;
+    background: linear-gradient(to left, rgba(2,0,36,1) 0%, rgba(239,255,0,1) 0%, rgba(41,219,255,1) 94%);
+    background-attachment:fixed;
+    background-clip:text;
 
-.loading::after{
-	border-top:10px solid #e67eff;
-	transform: rotate(240deg);
-}
-
-.loading span{
-	position: absolute;
-	width: 120px;
-	height: 120px;
-	color: #fff;
-	text-align: center;
-	line-height: 120px;
-	position: fixed;
-	animation: antiload 2s linear infinite;
-}
-
-@keyframes load{
-	to{
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes antiload{
-	to{
-		transform: rotate(-360deg);
-	}
 }
 </style>
 <div class="load-body">
-	<div class="loading">
-		<span>Loading...</span>
-	</div>
+	<h1 class="head">Object Tracker</h1><br>
+    <div class="loader">
+        <div class="loader">
+            <div class="loader">
+                <div class="loader">
+                    <div class="loader">  
+	               		<div class="loader">
+                               			
+                   		</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-				
+								
 
 
 ## It is an Open Source Object-Tracking system that can be used to track objects in videos . With some modifications it can also be applied to make a real time system 
