@@ -1,18 +1,76 @@
 <style src="head.css"></style>
+<style>
+.load-body{
+	margin : 0;
+	padding: 0;
+	background: #34495E;
+	height: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "montserrat", sans-serif;
+}
 
-<div class="body">
-	<div class="load-content">
-		<span class="sq"></span>
-		<span class="sq"></span>
-		<span class="sq"></span>
-		<span class="sq"></span>
-		<span class="sq"></span>
-		<span class="sq"></span>
-		<span class="sq"></span>
-		<span class="sq"></span>
-		<span class="sq"></span>
+.loading{
+	width:120px;
+	height: 120px;
+	box-sizing: border-box;
+	border-radius: 50%; 
+	border-top : 10px solid #e74c3c;
+	position: relative;
+	animation: load 2s linear infinite;
+}
+
+.loading::before,.loading::after{
+content : '';
+width: 120px;
+height: 120px;
+position: absolute;
+left: 0;
+top: -10px;
+box-sizing : border-box;
+border-radius: 50%;
+}
+
+.loading::before{
+	border-top:10px solid #e67e22;
+	transform: rotate(120deg);
+}
+
+.loading::after{
+	border-top:10px solid #e67eff;
+	transform: rotate(240deg);
+}
+
+.loading span{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	color: #fff;
+	text-align: center;
+	line-height: 120px;
+	position: fixed;
+	animation: antiload 2s linear infinite;
+}
+
+@keyframes load{
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes antiload{
+	to{
+		transform: rotate(-360deg);
+	}
+}
+</style>
+<div class="load-body">
+	<div class="loading">
+		<span>Loading...</span>
 	</div>
 </div>
+				
 
 _Object tracking is one of the trendy and under investigation topic of Computer Vision that
 challenges with several issues that should be considered while creating tracking systems, such as, visual
