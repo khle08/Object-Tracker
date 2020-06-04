@@ -614,13 +614,9 @@ This file has some bugs ! Will be updated after fixing them
 
 
 ##### _Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)_
-Optical Flow:
+The video below might not be played on mobile browser . Either view it in a Desktop Browser or download them here
+- [OPTICAL FLOW 4.7 MB](https://github.com/shivanshuman021/Object-Tracker/raw/master/OPT_FLOW.mp4)
+- [Object Tracker 9.55 MB](https://github.com/shivanshuman021/Object-Tracker/raw/master/SINGLE_Tracker.mp4)
+
 
 <video width="620" height="440" src="./SINGLE_Tracker.mp4" type="video/mp4" controls>
-
-
-<center>
-	[[embed url=https://github.com/shivanshuman021/Object-Tracker/blob/master/SINGLE_Tracker.mp4]]
-
-</center>
-
