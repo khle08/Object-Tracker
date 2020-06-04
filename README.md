@@ -91,7 +91,7 @@ div[class*=box] {
 </div>
 </div>
 																
-<p>
+<h2>
 <B><I>
 Object tracking is one of the trendy and under investigation topic of Computer Vision that
 challenges with several issues that should be considered while creating tracking systems, such as, visual
@@ -99,7 +99,7 @@ appearance, occlusions, camera motion, and so on. In several tracking algorithms
 Network (CNN) has been applied to take advantage of its powerfulness in feature extraction that convolutional
 layers can characterize the object from different perspectives and treat tracking process from misclassification.
 	</I></B>
-</p>
+</h2>
 				
 <style>
 *{
