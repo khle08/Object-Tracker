@@ -1,59 +1,96 @@
 <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
-.bg{
-	background: #34495E; 
-}	
-.load-body
-{
-    height:25px;
-    width:25px;
-    position:absolute;
-    left:50%;
-    top:35%;
-    transform:translate(-50%,-50%);
+*{
+	margin :0;
+	padding:0;
 }
 
-.loader
-{
-    height:calc(100% - 8px);
-    width:calc(100% - 8px);
-    border-top:8px solid red;
-    border-radius:50%;
-    animation:animate 2s linear infinite;
+.body {
+	margin-top:8%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-color: #333;
+  	height: 400px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+  overflow: hidden;
 }
 
-@keyframes animate
-{
-    100%{transform:rotate(360deg);}
+div[class*=box] {
+	height: 54%;
+	width: 100%; 
+  display: -webkit-box; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.head
-{
-    position:relative;
-    top:30px;
-    background: linear-gradient(to left, rgba(2,0,36,1) 0%, rgba(239,255,0,1) 0%, rgba(41,219,255,1) 94%);
-    background-attachment:fixed;
-    background-clip:text;
+.box { background-color: #3C3C3C; }
 
+.butn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+.butn-hov {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;	
+}
+.butn-hov span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-size: 15px;	
+}
+.butn-hov::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+.butn-hov::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+.butn-hov:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.butn-hov:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
 }
 </style>
-<div class="load-body">
-	<h1 class="head">Object Tracking ...</h1><br>
-    <div class="loader">
-        <div class="loader">
-            <div class="loader">
-                <div class="loader">
-                    <div class="loader">  
-	               		<div class="loader">
-                               			
-                   		</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="body">
+	<div class="box">
+  <div class="butn butn-hov">
+    <span>HOVER ME</span>
+  </div>
 </div>
-												
+</div>
+																
 <B><I>
 Object tracking is one of the trendy and under investigation topic of Computer Vision that
 challenges with several issues that should be considered while creating tracking systems, such as, visual
