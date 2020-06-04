@@ -62,10 +62,14 @@ This project implements all of the tracking algorithms using [OpenCV Tracking AP
 This file has some bugs ! Will be updated after fixing them
 
 ##### _Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)_
+Optical Flow:
 
-<video width="500" height="400" src="OPT_FLOW.mp4" type="video/mp4" controls>
+<video width="500" height="400" src="./OPT_FLOW.mp4" type="video/mp4" controls>
+    
+Tracker:
 
-<video width="500" height="400" src="SINGLE_Tracker.mp4" type="video/mp4" controls>
+<video width="500" height="400" src="./SINGLE_Tracker.mp4" type="video/mp4" controls>
+
 
 ### Useful References -
 - [Evaluation of Visual Tracking Algorithms for Embedded Devices](https://www.researchgate.net/profile/Francois_Christophe/publication/317803149_Evaluation_of_Visual_Tracking_Algorithms_for_Embedded_Devices/links/59a66ea4aca272895c166a6c/Evaluation-of-Visual-Tracking-Algorithms-for-Embedded-Devices.pdf)
