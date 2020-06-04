@@ -1,5 +1,4 @@
-<style>
-# Object-Tracker {color: red}	
+<style>	
 *{
 	margin :0;
 	padding:0;
@@ -90,6 +89,7 @@
 	}
 }
 </style>
+
 <div class="body">
 	<div>
 		<div class="load-head">
@@ -120,9 +120,97 @@ layers can characterize the object from different perspectives and treat trackin
 
 ### Instructions to download codes:
 
-    $ git clone https://github.com/shivanshuman021/Object-Tracker.git
+- [Optical_Flow.py](https://github.com/shivanshuman021/Object-Tracker/blob/master/01_Optical_Flow.py)
 
-## Optical Flow
+- [Single_Object_Tracker.py](https://github.com/shivanshuman021/Object-Tracker/blob/master/05_Single_Tracking.py)
+    
+
+<style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+	margin :0;
+	padding:0;
+}
+
+.body {
+	margin-top:8%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-color: #000;
+    flex-direction: row;
+  	height: 100px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+  overflow: hidden;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+</style>
+<div class="body">
+	<button class="OPTICAL FLOW" type="button">HOVER ME, THEN CLICK ME!</button>
+</div>
+				
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Optical_flow#:~:text=Optical%20flow%20or%20optic%20flow,brightness%20pattern%20in%20an%20image.): 
 
