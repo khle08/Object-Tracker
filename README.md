@@ -1,5 +1,18 @@
 <style src="head.css"></style>
-## It is an Open Source Object-Tracking system that can be used to track objects in videos . With some modifications it can also be applied to make a real time system 
+
+<div class="body">
+	<div class="load-content">
+		<span class="sq"></span>
+		<span class="sq"></span>
+		<span class="sq"></span>
+		<span class="sq"></span>
+		<span class="sq"></span>
+		<span class="sq"></span>
+		<span class="sq"></span>
+		<span class="sq"></span>
+		<span class="sq"></span>
+	</div>
+</div>
 
 _Object tracking is one of the trendy and under investigation topic of Computer Vision that
 challenges with several issues that should be considered while creating tracking systems, such as, visual
@@ -7,12 +20,6 @@ appearance, occlusions, camera motion, and so on. In several tracking algorithms
 Network (CNN) has been applied to take advantage of its powerfulness in feature extraction that convolutional
 layers can characterize the object from different perspectives and treat tracking process from misclassification._
 
-
-
-
-
-
-    
 
 <style>
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
