@@ -67,7 +67,7 @@ border-radius: 50%;
 </style>
 <div class="load-body">
 	<div class="loading">
-		<span><h2>AM</h2></span>
+		<span>AM</span>
 	</div>
 </div>
 				
@@ -355,6 +355,8 @@ Download [06_Multi_Tracking.py](https://github.com/shivanshuman021/Object-Tracke
     
 This file has some bugs ! Will be updated after fixing them
 
+### Animation Credit
+[Sufiyan Ansari](https://suffisme.github.io/Snippets/index.html)
 
 ### Useful References -
 - [Evaluation of Visual Tracking Algorithms for Embedded Devices](https://www.researchgate.net/profile/Francois_Christophe/publication/317803149_Evaluation_of_Visual_Tracking_Algorithms_for_Embedded_Devices/links/59a66ea4aca272895c166a6c/Evaluation-of-Visual-Tracking-Algorithms-for-Embedded-Devices.pdf)
@@ -367,11 +369,97 @@ Optical Flow:
 <video width="620" height="440" src="./OPT_FLOW.mp4" type="video/mp4" controls>
 
 
-
-<center>
-<video width="500" height="400" src="./SINGLE_Tracker.mp4" type="video/mp4" controls>
-    </center>
-
-
 <center>
 	[[embed url=https://github.com/shivanshuman021/Object-Tracker/blob/master/SINGLE_Tracker.mp4]]
+
+</center>
+
+<style>
+
+.body{
+	margin-top:8%;
+	background: #333;
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.load-body{
+	position: absolute;
+	top :50%;
+	left : 50%;
+	transform: translate(-50%,-50%);
+}
+
+.load-body span{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline-block;
+	margin : 0 6px;
+}
+
+.circle1{
+	background: #e74c3c;
+	animation: circle1 1s infinite;
+}
+.circle2{
+	background: #3498db;
+	animation: circle2 1s infinite;
+}
+.circle3{
+	background: #27ae60;
+	animation: circle3 1s infinite;
+}
+
+@keyframes circle1{
+	25%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.3);
+	}
+	75%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+@keyframes circle2{
+	25%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1);
+	}
+	75%{
+		transform: scale(1.3);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+@keyframes circle3{
+	25%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1);
+	}
+	75%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.3);
+	}
+}
+</style>
+<div class="body">
+	<div class="load-body">
+		<span class="circle1"></span>
+		<span class="circle2"></span>
+		<span class="circle3"></span>
+	</div>
+</div>
+				
