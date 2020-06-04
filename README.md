@@ -67,7 +67,7 @@ border-radius: 50%;
 </style>
 <div class="load-body">
 	<div class="loading">
-		<span>AM</span>
+		<span><h2>AM</h2></span>
 	</div>
 </div>
 				
