@@ -527,7 +527,7 @@ This file has some bugs ! Will be updated after fixing them
 .body{
 	margin-top:8%;
 	background: #333;
-	height: 400px;
+	height: 100px;
 	justify-content: center;
 	align-items: center;
 	display: flex;
