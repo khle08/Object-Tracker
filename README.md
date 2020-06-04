@@ -17,11 +17,12 @@ Intutively optical flow describes the shift in position of a particular pixel in
 as well as number of pixels in a frame of given size remain constant , it must be kept in mind that when we view successive 
 frames the neighbouring pixels will grab its pixel intensity from a particular pixel if the intensity of original pixel changes.
 
+##### _Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)_
+Optical Flow:
 
-
+<video width="500" height="400" src="./OPT_FLOW.mp4" type="video/mp4" controls>
   
-  
-To obtain the optical flow:
+To obtain the optical flow in a video :
   
     $ python 01_Optical_Flow.py
   
@@ -47,6 +48,8 @@ This project implements all of the tracking algorithms using [OpenCV Tracking AP
 
     $ python 05_Single_Tracking.py
     
+_Download the video demonstration for a single object tracker [here](https://github.com/shivanshuman021/Object-Tracker/blob/master/SINGLE_Tracker.mp4)_ 
+    
 #### Dependencies -
 - [Python](https://python.org)
 - [OpenCV](https://opencv.org)
@@ -55,20 +58,11 @@ This project implements all of the tracking algorithms using [OpenCV Tracking AP
 
 
 
-#### Multiple Object Tracker
+### Multiple Object Tracker
 
     $ python 06_Multi_Tracking.py
     
 This file has some bugs ! Will be updated after fixing them
-
-##### _Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)_
-Optical Flow:
-
-<video width="500" height="400" src="./OPT_FLOW.mp4" type="video/mp4" controls>
-    
-Tracker:
-
-<video width="500" height="400" src="./SINGLE_Tracker.mp4" type="video/mp4" controls>
 
 
 ### Useful References -
@@ -77,3 +71,6 @@ Tracker:
 - [Comparison of Tracking Techniques](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiliOuyoubpAhUCzTgGHUjuBHUQFjAEegQIBhAB&url=https%3A%2F%2Fwww.mdpi.com%2F2076-3417%2F9%2F16%2F3336%2Fpdf&usg=AOvVaw31tj8iqIPZNMGKmoF1yj2y)
 
 
+<center>
+<video width="500" height="400" src="./SINGLE_Tracker.mp4" type="video/mp4" controls>
+    </center>
