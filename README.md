@@ -1,5 +1,84 @@
-# Object-Tracker
+<style>
+.load-body{
+	margin : 0;
+	padding: 0;
+	background: #34495E;
+	height: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "montserrat", sans-serif;
+}
+
+.loading{
+	width:120px;
+	height: 120px;
+	box-sizing: border-box;
+	border-radius: 50%; 
+	border-top : 10px solid #e74c3c;
+	position: relative;
+	animation: load 2s linear infinite;
+}
+
+.loading::before,.loading::after{
+content : '';
+width: 120px;
+height: 120px;
+position: absolute;
+left: 0;
+top: -10px;
+box-sizing : border-box;
+border-radius: 50%;
+}
+
+.loading::before{
+	border-top:10px solid #e67e22;
+	transform: rotate(120deg);
+}
+
+.loading::after{
+	border-top:10px solid #e67eff;
+	transform: rotate(240deg);
+}
+
+.loading span{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	color: #fff;
+	text-align: center;
+	line-height: 120px;
+	position: fixed;
+	animation: antiload 2s linear infinite;
+}
+
+@keyframes load{
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes antiload{
+	to{
+		transform: rotate(-360deg);
+	}
+}
+</style>
+<div class="load-body">
+	<div class="loading">
+		<span>Loading...</span>
+	</div>
+</div>
+				
+
+
 ## It is an Open Source Object-Tracking system that can be used to track objects in videos . With some modifications it can also be applied to make a real time system 
+
+_Object tracking is one of the trendy and under investigation topic of Computer Vision that
+challenges with several issues that should be considered while creating tracking systems, such as, visual
+appearance, occlusions, camera motion, and so on. In several tracking algorithms Convolutional Neural
+Network (CNN) has been applied to take advantage of its powerfulness in feature extraction that convolutional
+layers can characterize the object from different perspectives and treat tracking process from misclassification._
 
 ### Instructions to download codes:
 
@@ -25,7 +104,10 @@ To obtain the optical flow in a video file :
     
 ## Object Tracking Algorithms :
 
-- Channel and Spatial Relatibility Tracking [CSRT](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjes5vxnebpAhU1zTgGHTH2D3sQFjABegQIBBAB&url=https%3A%2F%2Farxiv.org%2Fpdf%2F1611.08461&usg=AOvVaw1fGNV1xM1TWV7lVL0OM9Ee)
+### Channel and Spatial Relatibility Tracking [CSRT](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjes5vxnebpAhU1zTgGHTH2D3sQFjABegQIBBAB&url=https%3A%2F%2Farxiv.org%2Fpdf%2F1611.08461&usg=AOvVaw1fGNV1xM1TWV7lVL0OM9Ee) 
+CSRT tracker is C++ implementation of the CSR-DCF (Channel and Spatial Reliability of Discriminative Correlation Filter)
+tracking algorithm in OpenCV library. Experimental results demonstrated that CSRT tracker presents better
+tracking outcomes with integration of object detection model, rather than using tracking algorithm or filter 
 
 - Multiple Instance Learning [MIL](https://faculty.ucmerced.edu/mhyang/papers/cvpr09a.pdf)
 
