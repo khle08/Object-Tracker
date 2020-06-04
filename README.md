@@ -1,3 +1,5 @@
+<b>
+<div>
 <style>
 
 .bg{
@@ -45,16 +47,10 @@
                 <div class="loader">
                     <div class="loader">  
 	               		<div class="loader">
-                               			
-                   		</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</div></div></div></div> </div></div></div>
 								
-
+</div>
+</b>
 
 ## It is an Open Source Object-Tracking system that can be used to track objects in videos . With some modifications it can also be applied to make a real time system 
 
