@@ -93,7 +93,7 @@
 <div class="body">
 	<div>
 		<div class="load-head">
-			Loading... 
+			Object Tracker
 		</div>
 		<div class="loader">
 			<span class="L1"></span>
