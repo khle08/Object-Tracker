@@ -522,17 +522,6 @@ This file has some bugs ! Will be updated after fixing them
     
 - [Comparison of Tracking Techniques](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiliOuyoubpAhUCzTgGHUjuBHUQFjAEegQIBhAB&url=https%3A%2F%2Fwww.mdpi.com%2F2076-3417%2F9%2F16%2F3336%2Fpdf&usg=AOvVaw31tj8iqIPZNMGKmoF1yj2y)
 
-##### _Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)_
-Optical Flow:
-
-<video width="620" height="440" src="./OPT_FLOW.mp4" type="video/mp4" controls>
-
-
-<center>
-	[[embed url=https://github.com/shivanshuman021/Object-Tracker/blob/master/SINGLE_Tracker.mp4]]
-
-</center>
-
 <style>
 
 .body{
@@ -622,3 +611,16 @@ Optical Flow:
 	</div>
 </div>
 				
+
+
+##### _Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)_
+Optical Flow:
+
+<video width="620" height="440" src="./Single_Tracker.mp4" type="video/mp4" controls>
+
+
+<center>
+	[[embed url=https://github.com/shivanshuman021/Object-Tracker/blob/master/SINGLE_Tracker.mp4]]
+
+</center>
+
