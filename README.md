@@ -1,4 +1,4 @@
-<style src="head.css"></style>
+
 <style>
 .load-body{
 	margin : 0;
@@ -67,21 +67,20 @@ border-radius: 50%;
 </style>
 <div class="load-body">
 	<div class="loading">
-		<span>Loading...</span>
+		<span>AM</span>
 	</div>
 </div>
 				
-
-_Object tracking is one of the trendy and under investigation topic of Computer Vision that
+<B><I>
+Object tracking is one of the trendy and under investigation topic of Computer Vision that
 challenges with several issues that should be considered while creating tracking systems, such as, visual
 appearance, occlusions, camera motion, and so on. In several tracking algorithms Convolutional Neural
 Network (CNN) has been applied to take advantage of its powerfulness in feature extraction that convolutional
-layers can characterize the object from different perspectives and treat tracking process from misclassification._
+layers can characterize the object from different perspectives and treat tracking process from misclassification.
+	</I></B>
 
-
+				
 <style>
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
-
 *{
 	margin :0;
 	padding:0;
@@ -92,79 +91,104 @@ layers can characterize the object from different perspectives and treat trackin
   	display: flex;
   	justify-content: center;
   	align-items: center;
-  	background-color: #000;
-    flex-direction: row;
-  	height: 100px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-family: 'Open Sans Condensed', sans-serif;
-  overflow: hidden;
+  	background-color: #333;
+  	font-weight: bold;
+  	height: 200px;
 }
 
-.glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+.load-head{
+	color : #f1f1f1;
+	font-family: sans-serif;
+	font-size: 30px;
+	margin-bottom: 1%;  
 }
 
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+.loader{
+	height: 30px;
+	width: 300px;
+	display: flex;
 }
 
-.glow-on-hover:active {
-    color: #000
+.loader span{
+	width: 30px;
+	height: 30px;
+	background: white;
+	margin: 1px; 
 }
 
-.glow-on-hover:active:after {
-    background: transparent;
+.L1{
+	content: '1';
+	animation: L1 1s 1;
 }
 
-.glow-on-hover:hover:before {
-    opacity: 1;
+.L2{
+	animation: L1 1s 1;
+	animation-delay: 0.2s;
 }
 
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+.L3{
+	animation: L1 1s 1;
+	animation-delay: 0.6s;
 }
 
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+.L4{
+	animation: L1 1s 1;
+	animation-delay: 0.9s;
+}
+
+.L5{
+	animation: L1 1s 1;
+	animation-delay: 1.2s;
+}
+
+.L6{
+	animation: L1 1s 1;
+	animation-delay: 1.5s;
+}
+
+.L7{
+	animation: L1 1s 1;
+	animation-delay: 1.8s;
+}
+
+.L8{
+	animation: L1 1s 1;
+	animation-delay: 2.1s;
+}
+
+.L9{
+	animation: L1 1s 1;
+	animation-delay: 2.4s;
+}
+
+@keyframes L1{
+	50%{
+		background-color: #dc3545;
+	}
+	
+	100%{
+		transform: rotateZ(180deg);
+	}
 }
 </style>
 <div class="body">
-	<button class="OPTICAL FLOW" type="button">OPTICAL FLOW</button>
-</div>
-				
+	<div>
+		<div class="load-head">
+			OPTICAL FLOW
+		</div>
+		<div class="loader">
+			<span class="L1"></span>
+			<span class="L2"></span>
+			<span class="L3"></span>
+			<span class="L4"></span>
+			<span class="L5"></span>
+			<span class="L6"></span>
+			<span class="L7"></span>
+			<span class="L8"></span>
+			<span class="L9"></span>
+		</div>
+	</div>
+</div>				
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Optical_flow#:~:text=Optical%20flow%20or%20optic%20flow,brightness%20pattern%20in%20an%20image.): 
 
@@ -204,8 +228,6 @@ tracking outcomes with integration of object detection model, rather than using 
 This project implements all of the tracking algorithms using [OpenCV Tracking API](https://docs.opencv.org/3.4/d9/df8/group__tracking.html) available [OpenCV contrib](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjIhcL0pebpAhUexjgGHQ7wAuUQFjAMegQIBRAB&url=https%3A%2F%2Fdocs.opencv.org%2F3.4.10%2Fd3%2Fd81%2Ftutorial_contrib_root.html&usg=AOvVaw1-ltthwNL7WsiqFPy-cNJ7) package
 
 <style>
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
-
 *{
 	margin :0;
 	padding:0;
@@ -216,79 +238,104 @@ This project implements all of the tracking algorithms using [OpenCV Tracking AP
   	display: flex;
   	justify-content: center;
   	align-items: center;
-  	background-color: #000;
-    flex-direction: row;
-  	height: 100px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-family: 'Open Sans Condensed', sans-serif;
-  overflow: hidden;
+  	background-color: #333;
+  	font-weight: bold;
+  	height: 200px;
 }
 
-.glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+.load-head{
+	color : #f1f1f1;
+	font-family: sans-serif;
+	font-size: 30px;
+	margin-bottom: 1%;  
 }
 
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+.loader{
+	height: 30px;
+	width: 300px;
+	display: flex;
 }
 
-.glow-on-hover:active {
-    color: #000
+.loader span{
+	width: 30px;
+	height: 30px;
+	background: white;
+	margin: 1px; 
 }
 
-.glow-on-hover:active:after {
-    background: transparent;
+.L1{
+	content: '1';
+	animation: L1 1s 1;
 }
 
-.glow-on-hover:hover:before {
-    opacity: 1;
+.L2{
+	animation: L1 1s 1;
+	animation-delay: 0.2s;
 }
 
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+.L3{
+	animation: L1 1s 1;
+	animation-delay: 0.6s;
 }
 
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+.L4{
+	animation: L1 1s 1;
+	animation-delay: 0.9s;
+}
+
+.L5{
+	animation: L1 1s 1;
+	animation-delay: 1.2s;
+}
+
+.L6{
+	animation: L1 1s 1;
+	animation-delay: 1.5s;
+}
+
+.L7{
+	animation: L1 1s 1;
+	animation-delay: 1.8s;
+}
+
+.L8{
+	animation: L1 1s 1;
+	animation-delay: 2.1s;
+}
+
+.L9{
+	animation: L1 1s 1;
+	animation-delay: 2.4s;
+}
+
+@keyframes L1{
+	50%{
+		background-color: #dc3545;
+	}
+	
+	100%{
+		transform: rotateZ(180deg);
+	}
 }
 </style>
 <div class="body">
-	<button class="OPTICAL FLOW" type="button">OPTICAL FLOW</button>
+	<div>
+		<div class="load-head">
+			Single Object Tracker
+		</div>
+		<div class="loader">
+			<span class="L1"></span>
+			<span class="L2"></span>
+			<span class="L3"></span>
+			<span class="L4"></span>
+			<span class="L5"></span>
+			<span class="L6"></span>
+			<span class="L7"></span>
+			<span class="L8"></span>
+			<span class="L9"></span>
+		</div>
+	</div>
 </div>
-
 Download code [here](https://github.com/shivanshuman021/Object-Tracker/blob/master/05_Single_Tracking.py)
 
     $ python 05_Single_Tracking.py
