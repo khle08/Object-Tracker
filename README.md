@@ -233,11 +233,11 @@ To obtain the optical flow in a video file :
 
 ### Channel and Spatial Relatibility Tracking [CSRT](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjes5vxnebpAhU1zTgGHTH2D3sQFjABegQIBBAB&url=https%3A%2F%2Farxiv.org%2Fpdf%2F1611.08461&usg=AOvVaw1fGNV1xM1TWV7lVL0OM9Ee) 
 
-_CSRT tracker is C++ implementation of the CSR-DCF (Channel and Spatial Reliability of Discriminative Correlation Filter)
+CSRT tracker is C++ implementation of the CSR-DCF (Channel and Spatial Reliability of Discriminative Correlation Filter)
 tracking algorithm in OpenCV library. Experimental results demonstrated that CSRT tracker presents better
 tracking outcomes with integration of object detection model, rather than using tracking algorithm or filter .It is integration of 
 the Region based CNN (Faster RCNN) pre-trained object detection model that the OpenCV based CSRT (Channel and Spatial Reliability Tracking) tracker has a high
-chance to identifying objects features, classes and locations as well_
+chance to identifying objects features, classes and locations as well
 
 ### Multiple Instance Learning [MIL](https://faculty.ucmerced.edu/mhyang/papers/cvpr09a.pdf)
 It address the problem of learning an adaptive appearance model for object tracking. In particular, a class of tracking techniques 
@@ -249,21 +249,33 @@ Using Multiple Instance Learning (MIL) instead of traditional supervised learnin
 more robust tracker with fewer parameter tweaks.
 
 ### Kernalized Correlation Filter [KCF](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjr_eCDn-bpAhVh6nMBHctkCOYQFjACegQIAxAB&url=https%3A%2F%2Fwww.mdpi.com%2F2076-3417%2F10%2F2%2F713%2Fpdf&usg=AOvVaw05SOT9pM4fR68LFLr6-Cq7)
-_Deep feature-based trackers that have been proposed to achieve a higher accuracy are not suitable for real-time tracking because
+Deep feature-based trackers that have been proposed to achieve a higher accuracy are not suitable for real-time tracking because
 of an extremely slow processing speed. The slow speed is a major factor to degrade tracking accuracy under a real-time streaming 
 condition since the processing delay forces skipping frames. To increase the tracking accuracy with preserving the processing speed, 
-an improved kernelized correlation filter (KCF)-based tracking method that integrates three functional modules:_
+an improved kernelized correlation filter (KCF)-based tracking method that integrates three functional modules:
 - tracking failure detection 
 - re-tracking using multiple search windows 
 - motion vector analysis to decide a preferred search window.
 
 ### Tracker Learning Detection [TLD](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiUz6WyoObpAhUD63MBHU4_C5QQFjABegQIBRAB&url=http%3A%2F%2Fvision.stanford.edu%2Fteaching%2Fcs231b_spring1415%2Fpapers%2FKalal-PAMI.pdf&usg=AOvVaw1MM92z9XpbLgUBLwy2PFjw)
+In this the positions of objects are determined in first frame and then in successive frame it is tracked if it is present in next 
+frame. TLD explicitly decomposes the long-term tracking task into tracking, learning and detection. The tracker follows the object 
+from frame to frame. The detector localizes all appearances that have been observed so far and corrects the tracker if necessary. The 
+learning estimates detector’s errors and updates it to avoid these errors in the future
 
-- Generic Object Tracking Using Regression Networks [GOTURN](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiivYrPoebpAhWTyjgGHbvHDUwQFjABegQIAhAB&url=https%3A%2F%2Farxiv.org%2Fpdf%2F1604.01802&usg=AOvVaw0BQRhbH7dA0L_H4SqyY0Ho)
+### Generic Object Tracking Using Regression Networks [GOTURN](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiivYrPoebpAhWTyjgGHbvHDUwQFjABegQIAhAB&url=https%3A%2F%2Farxiv.org%2Fpdf%2F1604.01802&usg=AOvVaw0BQRhbH7dA0L_H4SqyY0Ho)
+In GOTURN a neural network for tracking does task in an entirely offline manner. At test time, when tracking novel objects, the network 
+weights are frozen, and no online fine-tuning required (as shown in Figure 1). Through the offline training procedure, the tracker 
+learns to track novel objects in a fast, robust, and accurate manner
 
-- Minimum Output Sum of Squared Error [MOSSE](https://ieeexplore.ieee.org/abstract/document/5539960)
+### Minimum Output Sum of Squared Error [MOSSE](https://ieeexplore.ieee.org/abstract/document/5539960)
+The MOSSE tracker calculates the minimum output sum of square error to find out the most possible location of the tracking object. The 
+benefits of using a correlation filter make the MOSSE tracker more robust to the problems of scaling, rotation, deformation, and 
+occlusion compared to traditional approaches. Also MOSSE is more flexible than other correlation-filter-based trackers because the 
+target is not required to be in the center of the image in the beginning of tracking
 
-This project implements all of the tracking algorithms using [OpenCV Tracking API](https://docs.opencv.org/3.4/d9/df8/group__tracking.html) available [OpenCV contrib](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjIhcL0pebpAhUexjgGHQ7wAuUQFjAMegQIBRAB&url=https%3A%2F%2Fdocs.opencv.org%2F3.4.10%2Fd3%2Fd81%2Ftutorial_contrib_root.html&usg=AOvVaw1-ltthwNL7WsiqFPy-cNJ7) package
+
+#### This project implements all of the tracking algorithms using [OpenCV Tracking API](https://docs.opencv.org/3.4/d9/df8/group__tracking.html) available under [OpenCV contrib](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjIhcL0pebpAhUexjgGHQ7wAuUQFjAMegQIBRAB&url=https%3A%2F%2Fdocs.opencv.org%2F3.4.10%2Fd3%2Fd81%2Ftutorial_contrib_root.html&usg=AOvVaw1-ltthwNL7WsiqFPy-cNJ7) package
 
 <style>
 *{
