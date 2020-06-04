@@ -1,114 +1,166 @@
-<style>	
+<style>
 *{
 	margin :0;
 	padding:0;
 }
 
-.body {
+.body{
 	margin-top:8%;
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	background-color: #333;
-  	font-weight: bold;
-  	height: 400px;
+	background: #333;
+	height: 440px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
 }
-
-.load-head{
-	color : #f1f1f1;
-	font-family: sans-serif;
-	font-size: 30px;
-	margin-bottom: 1%;  
-}
-
-.loader{
-	height: 30px;
-	width: 300px;
+.load-heading{
+	color:#f1f1f1;
+	position: absolute;
+	top :42%;
+	left : 40%;
 	display: flex;
 }
 
-.loader span{
-	width: 30px;
-	height: 30px;
-	background: white;
-	margin: 1px; 
+.load-body{
+	position: absolute;
+	top :50%;
+	left : 42%;
+	width: 100px;
+	height: 100px;
+	display: flex;
 }
 
-.L1{
-	content: '1';
-	animation: L1 1s 1;
+.load-body span{
+	width: 20px;
+	height: 5px;
+	position: relative;
+	display: inline-block;
+	background: crimson;
 }
 
-.L2{
-	animation: L1 1s 1;
-	animation-delay: 0.2s;
+.bar1{
+	animation: b1 2s infinite;
+}
+.bar2{
+	animation: b2 2s infinite;
+}
+.bar3{
+	animation: b3 2s infinite;
+}
+.bar4{
+	animation: b4 2s infinite;
+}
+.bar5{
+	animation: b5 2s infinite;
 }
 
-.L3{
-	animation: L1 1s 1;
-	animation-delay: 0.6s;
-}
-
-.L4{
-	animation: L1 1s 1;
-	animation-delay: 0.9s;
-}
-
-.L5{
-	animation: L1 1s 1;
-	animation-delay: 1.2s;
-}
-
-.L6{
-	animation: L1 1s 1;
-	animation-delay: 1.5s;
-}
-
-.L7{
-	animation: L1 1s 1;
-	animation-delay: 1.8s;
-}
-
-.L8{
-	animation: L1 1s 1;
-	animation-delay: 2.1s;
-}
-
-.L9{
-	animation: L1 1s 1;
-	animation-delay: 2.4s;
-}
-
-@keyframes L1{
-	50%{
-		background-color: #dc3545;
+@keyframes b1{
+	20%{
+		height: 60px;
 	}
-	
+	40%{
+		height: 2px;
+	}
+	60%{
+		height: 2px;
+	}
+	80%{
+		height: 2px;
+	}
 	100%{
-		transform: rotateZ(180deg);
+		height: 2px;
 	}
 }
-</style>
 
+@keyframes b2{
+	20%{background: crimson;
+		height: 2px;
+	}
+	40%{
+		background: blue;
+		height: 70px;
+	}
+	60%{background: crimson;
+		height: 2px;
+	}
+	80%{background: crimson;
+		height: 2px;
+	}
+	100%{background: crimson;
+		height: 2px;
+	}
+}
+
+@keyframes b3{
+	20%{background: crimson;
+		height: 2px;
+	}
+	40%{background: crimson;
+		height: 2px;
+	}
+	60%{
+		background: rgba(41,219,255,1);
+		height: 80px;
+	}
+	80%{background: crimson;
+		height:2px;
+	}
+	100%{background: crimson;
+		height:2px;
+	}
+}
+
+@keyframes b4{
+	20%{background: crimson;
+		height: 2px;
+	}
+	40%{background: crimson;
+		height: 2px;
+	}
+	60%{background: crimson;
+		height: 2px;
+	}
+	80%{
+		background: yellow;
+		height: 90px;
+	}
+	100%{background: crimson;
+		height: 2px;
+	}
+}
+
+@keyframes b5{
+	20%{background: crimson;
+		height: 2px;
+	}
+	40%{background: crimson;
+		height: 2px;
+	}
+	60%{background: crimson;
+		height: 2px;
+	}
+	80%{background: crimson;
+		height:2px;
+	}
+	100%{
+		background: MediumSeaGreen;
+		height: 100px;
+	}
+}
+
+</style>
 <div class="body">
-	<div>
-		<div class="load-head">
-			Object Tracker
-		</div>
-		<div class="loader">
-			<span class="L1"></span>
-			<span class="L2"></span>
-			<span class="L3"></span>
-			<span class="L4"></span>
-			<span class="L5"></span>
-			<span class="L6"></span>
-			<span class="L7"></span>
-			<span class="L8"></span>
-			<span class="L9"></span>
-		</div>
+	<div class="load-heading">
+		<h3><I>AM</I></h3>
+	</div>
+	<div class="load-body">
+		<span class="bar1"></span>
+		<span class="bar2"></span>
+		<span class="bar3"></span>
+		<span class="bar4"></span>
+		<span class="bar5"></span>
 	</div>
 </div>
-				
+								
 
 ## It is an Open Source Object-Tracking system that can be used to track objects in videos . With some modifications it can also be applied to make a real time system 
 
