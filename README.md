@@ -16,13 +16,8 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Optical_flow#:~:text=Opti
 Intutively optical flow describes the shift in position of a particular pixel in successive frames . Although pixel positions 
 as well as number of pixels in a frame of given size remain constant , it must be kept in mind that when we view successive 
 frames the neighbouring pixels will grab its pixel intensity from a particular pixel if the intensity of original pixel changes.
-
-##### _Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)_
-Optical Flow:
-
-<video width="500" height="400" src="./OPT_FLOW.mp4" type="video/mp4" controls>
   
-To obtain the optical flow in a video :
+To obtain the optical flow in a video file :
   
     $ python 01_Optical_Flow.py
   
@@ -69,6 +64,12 @@ This file has some bugs ! Will be updated after fixing them
 - [Evaluation of Visual Tracking Algorithms for Embedded Devices](https://www.researchgate.net/profile/Francois_Christophe/publication/317803149_Evaluation_of_Visual_Tracking_Algorithms_for_Embedded_Devices/links/59a66ea4aca272895c166a6c/Evaluation-of-Visual-Tracking-Algorithms-for-Embedded-Devices.pdf)
     
 - [Comparison of Tracking Techniques](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiliOuyoubpAhUCzTgGHUjuBHUQFjAEegQIBhAB&url=https%3A%2F%2Fwww.mdpi.com%2F2076-3417%2F9%2F16%2F3336%2Fpdf&usg=AOvVaw31tj8iqIPZNMGKmoF1yj2y)
+
+##### _Here is an Optical Flow tracker using [OpenCV](https://opencv.org/)_
+Optical Flow:
+
+<video width="500" height="400" src="./OPT_FLOW.mp4" type="video/mp4" controls>
+
 
 
 <center>
