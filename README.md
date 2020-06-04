@@ -1,57 +1,3 @@
-<b>
-<div>
-<style>
-
-.bg{
-	background: #32CD32; 
-}	
-.load-body
-{
-    height:50px;
-    width:50px;
-    position:absolute;
-    left:50%;
-    top:35%;
-    transform:translate(-50%,-50%);
-}
-
-.loader
-{
-    height:calc(100% - 8px);
-    width:calc(100% - 8px);
-    border-top:8px solid red;
-    border-radius:50%;
-    animation:animate 2s linear infinite;
-}
-
-@keyframes animate
-{
-    100%{transform:rotate(360deg);}
-}
-
-.head
-{
-    position:relative;
-    top:30px;
-    background: linear-gradient(to left, rgba(2,0,36,1) 0%, rgba(239,255,0,1) 0%, rgba(41,219,255,1) 94%);
-    background-attachment:fixed;
-    background-clip:text;
-
-}
-</style>
-<div class="load-body">
-	<h1 class="head">Object Tracker</h1><br>
-    <div class="loader">
-        <div class="loader">
-            <div class="loader">
-                <div class="loader">
-                    <div class="loader">  
-	               		<div class="loader">
-</div></div></div></div> </div></div></div>
-								
-</div>
-</b>
-
 ## It is an Open Source Object-Tracking system that can be used to track objects in videos . With some modifications it can also be applied to make a real time system 
 
 _Object tracking is one of the trendy and under investigation topic of Computer Vision that
@@ -137,3 +83,7 @@ Optical Flow:
 <center>
 <video width="500" height="400" src="./SINGLE_Tracker.mp4" type="video/mp4" controls>
     </center>
+
+
+<center>
+	[[embed url=https://github.com/shivanshuman021/Object-Tracker/blob/master/SINGLE_Tracker.mp4]]
